@@ -1,8 +1,449 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CJ Deparine Pagas</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
-<nav><h2>CJ Pagas</h2><ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-<header><img src="assets/images/profile.jpg" alt="Profile"><h1>CJ Deparine Pagas</h1><p>Aspiring Web Developer</p></header>
-<section id="about"><h2>About Me</h2><p>Hello! I'm CJ Deparine Pagas. I'm passionate about web development and always eager to learn new technologies.</p></section>
-<section id="skills"><h2>Skills</h2><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Design</li></ul></section>
-<section id="projects"><h2>Projects</h2><div class="card"><h3>Portfolio Website</h3><p>Personal portfolio showcasing my skills and projects.</p></div><div class="card"><h3>Future Project</h3><p>Add your own project here.</p></div></section>
-<section id="contact"><h2>Contact</h2><p>Email: youremail@gmail.com</p><p>Phone: Your Phone Number</p><p>Facebook: Your Facebook Link</p><p>GitHub: Your GitHub Link</p></section>
-<footer>© 2026 CJ Deparine Pagas</footer><script src="assets/js/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[YOUR NAME] | Portfolio</title>
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Inline CSS connection -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Particle Background (CSS Canvas) -->
+    <div class="bg-animation">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">PORT<span class="yellow-text">FOLIO</span></a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header id="home" class="section hero-section">
+        <div class="container hero-container">
+            <div class="hero-content reveal-left">
+                <h4 class="hero-subtitle">WELCOME TO MY PORTFOLIO</h4>
+                <h1 class="hero-title">Hi, I am <span class="yellow-text">[YOUR NAME]</span></h1>
+                <h2 class="hero-profession">I am a <span class="typing-text" data-words='["[YOUR PROFESSION]", "Developer", "Designer", "Creator"]'></span></h2>
+                <p class="hero-desc">[SHORT INTRODUCTION - Write a highly engaging introduction about yourself here. Explain your ultimate goal, what drives you, and how you solve complex problems with clean solutions.]</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-container reveal-right">
+                <div class="profile-img-wrapper floating">
+                    <img src="assets/images/profile-placeholder.png" alt="Profile Picture" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title reveal-up">About <span class="yellow-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <h3>Who is <span class="yellow-text">[YOUR NAME]</span>?</h3>
+                    <p class="about-paragraph">[WRITE ABOUT YOURSELF HERE - This is a dedicated section to describe your journey, passion, and your technical background. Detail the industries you have worked in, the core values you bring to teams, and the philosophy behind your coding and design practices. Expand this narrative to capture your unique professional identity.]</p>
+                    <p class="about-paragraph">[ADDITIONAL INFO - Share hobbies, research interests, or continuous learning pathways. Show potential clients and employers who you are beyond the technical stack.]</p>
+                    <div class="about-stats">
+                        <div class="stat-card reveal-up">
+                            <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-card reveal-up" style="transition-delay: 0.1s;">
+                            <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card reveal-up" style="transition-delay: 0.2s;">
+                            <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Education Section -->
+    <section id="education" class="section education-section alternate-bg">
+        <div class="container">
+            <h2 class="section-title reveal-up">My <span class="yellow-text">Education</span></h2>
+            <div class="cards-grid reveal-zoom">
+                <!-- Card 1 -->
+                <div class="card education-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <span class="card-tag">[YEAR - YEAR]</span>
+                        <h3 class="card-title">[SCHOOL NAME]</h3>
+                        <h4 class="card-subtitle">[COURSE / DEGREE]</h4>
+                        <p class="card-desc">[Describe your major accomplishments, key modules studied, honors, or extracurricular activities relevant to your career path here.]</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card education-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <span class="card-tag">[YEAR - YEAR]</span>
+                        <h3 class="card-title">[SCHOOL NAME]</h3>
+                        <h4 class="card-subtitle">[COURSE / DEGREE]</h4>
+                        <p class="card-desc">[Describe your major accomplishments, key modules studied, honors, or extracurricular activities relevant to your career path here.]</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card education-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <span class="card-tag">[YEAR - YEAR]</span>
+                        <h3 class="card-title">[SCHOOL NAME]</h3>
+                        <h4 class="card-subtitle">[COURSE / DEGREE]</h4>
+                        <p class="card-desc">[Describe your major accomplishments, key modules studied, honors, or extracurricular activities relevant to your career path here.]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title reveal-up">My <span class="yellow-text">Skills</span></h2>
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card reveal-up">
+                    <div class="skill-icon">HTML</div>
+                    <h4 class="skill-name">HTML5</h4>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill-card reveal-up" style="transition-delay: 0.05s;">
+                    <div class="skill-icon">CSS</div>
+                    <h4 class="skill-name">CSS3</h4>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="skill-icon">JS</div>
+                    <h4 class="skill-name">JavaScript</h4>
+                </div>
+                <!-- Skill 4 -->
+                <div class="skill-card reveal-up" style="transition-delay: 0.15s;">
+                    <div class="skill-icon">PHP</div>
+                    <h4 class="skill-name">PHP</h4>
+                </div>
+                <!-- Skill 5 -->
+                <div class="skill-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="skill-icon">SQL</div>
+                    <h4 class="skill-name">MySQL</h4>
+                </div>
+                <!-- Skill 6 -->
+                <div class="skill-card reveal-up" style="transition-delay: 0.25s;">
+                    <div class="skill-icon">PY</div>
+                    <h4 class="skill-name">Python</h4>
+                </div>
+                <!-- Skill 7 -->
+                <div class="skill-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="skill-icon">GIT</div>
+                    <h4 class="skill-name">Git</h4>
+                </div>
+                <!-- Skill 8 -->
+                <div class="skill-card reveal-up" style="transition-delay: 0.35s;">
+                    <div class="skill-icon">GH</div>
+                    <h4 class="skill-name">GitHub</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section id="projects" class="section projects-section alternate-bg">
+        <div class="container">
+            <h2 class="section-title reveal-up">Featured <span class="yellow-text">Projects</span></h2>
+            <div class="cards-grid">
+                <!-- Project 1 -->
+                <div class="card project-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">[PROJECT TITLE 1]</h3>
+                        <p class="card-desc">[PROJECT DESCRIPTION - A comprehensive, high-level overview of what this application does, your technical implementation details, challenges overcome, and stack utilized.]</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card project-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">[PROJECT TITLE 2]</h3>
+                        <p class="card-desc">[PROJECT DESCRIPTION - A comprehensive, high-level overview of what this application does, your technical implementation details, challenges overcome, and stack utilized.]</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="card project-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">[PROJECT TITLE 3]</h3>
+                        <p class="card-desc">[PROJECT DESCRIPTION - A comprehensive, high-level overview of what this application does, your technical implementation details, challenges overcome, and stack utilized.]</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="card project-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">[PROJECT TITLE 4]</h3>
+                        <p class="card-desc">[PROJECT DESCRIPTION - A comprehensive, high-level overview of what this application does, your technical implementation details, challenges overcome, and stack utilized.]</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="card project-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">[PROJECT TITLE 5]</h3>
+                        <p class="card-desc">[PROJECT DESCRIPTION - A comprehensive, high-level overview of what this application does, your technical implementation details, challenges overcome, and stack utilized.]</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="card project-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">[PROJECT TITLE 6]</h3>
+                        <p class="card-desc">[PROJECT DESCRIPTION - A comprehensive, high-level overview of what this application does, your technical implementation details, challenges overcome, and stack utilized.]</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="container">
+            <h2 class="section-title reveal-up">My <span class="yellow-text">Certificates</span></h2>
+            <div class="cards-grid">
+                <!-- Certificate 1 -->
+                <div class="card certificate-card reveal-zoom">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <span class="card-tag">[ISSUER]</span>
+                        <h3 class="card-title">[CERTIFICATE TITLE]</h3>
+                        <p class="card-desc">[Provide high-level summary details of verified skills learned, certifications, issue date, or credentials IDs.]</p>
+                        <a href="#" class="btn btn-sm btn-secondary">View Credential</a>
+                    </div>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="card certificate-card reveal-zoom" style="transition-delay: 0.1s;">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <span class="card-tag">[ISSUER]</span>
+                        <h3 class="card-title">[CERTIFICATE TITLE]</h3>
+                        <p class="card-desc">[Provide high-level summary details of verified skills learned, certifications, issue date, or credentials IDs.]</p>
+                        <a href="#" class="btn btn-sm btn-secondary">View Credential</a>
+                    </div>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="card certificate-card reveal-zoom" style="transition-delay: 0.2s;">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <span class="card-tag">[ISSUER]</span>
+                        <h3 class="card-title">[CERTIFICATE TITLE]</h3>
+                        <p class="card-desc">[Provide high-level summary details of verified skills learned, certifications, issue date, or credentials IDs.]</p>
+                        <a href="#" class="btn btn-sm btn-secondary">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Experience Section -->
+    <section id="experience" class="section experience-section alternate-bg">
+        <div class="container">
+            <h2 class="section-title reveal-up">My <span class="yellow-text">Experience</span></h2>
+            <div class="timeline">
+                <!-- Timeline Event 1 -->
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">[YEAR - PRESENT]</div>
+                    <div class="timeline-content card">
+                        <div class="card-glow"></div>
+                        <h3>[JOB TITLE]</h3>
+                        <h4>[COMPANY NAME]</h4>
+                        <p>[Provide detailed points mapping out major duties, contributions, tech leadership highlights, architecture designs, or cross-functional team milestones you managed.]</p>
+                    </div>
+                </div>
+                <!-- Timeline Event 2 -->
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">[YEAR - YEAR]</div>
+                    <div class="timeline-content card">
+                        <div class="card-glow"></div>
+                        <h3>[JOB TITLE]</h3>
+                        <h4>[COMPANY NAME]</h4>
+                        <p>[Provide detailed points mapping out major duties, contributions, tech leadership highlights, architecture designs, or cross-functional team milestones you managed.]</p>
+                    </div>
+                </div>
+                <!-- Timeline Event 3 -->
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">[YEAR - YEAR]</div>
+                    <div class="timeline-content card">
+                        <div class="card-glow"></div>
+                        <h3>[JOB TITLE]</h3>
+                        <h4>[COMPANY NAME]</h4>
+                        <p>[Provide detailed points mapping out major duties, contributions, tech leadership highlights, architecture designs, or cross-functional team milestones you managed.]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="section-title reveal-up">My <span class="yellow-text">Services</span></h2>
+            <div class="cards-grid">
+                <!-- Service 1 -->
+                <div class="card service-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">⚡</div>
+                        <h3 class="card-title">Web Design</h3>
+                        <p class="card-desc">[Describe the exact scope, modern prototyping approaches, design tools, and aesthetic systems you build for users.]</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="card service-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">💻</div>
+                        <h3 class="card-title">Front-end Development</h3>
+                        <p class="card-desc">[Explain how you code responsive, semantic, incredibly optimized interfaces with custom interactive interactions.]</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="card service-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon">🎨</div>
+                        <h3 class="card-title">UI Design</h3>
+                        <p class="card-desc">[Outline your structural user journey designs, custom interactive motion patterns, and design consistency values.]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact" class="section contact-section alternate-bg">
+        <div class="container">
+            <h2 class="section-title reveal-up">Get In <span class="yellow-text">Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Contact Information</h3>
+                    <p class="contact-subtitle">Let's build something extraordinary together. Reach out anytime!</p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="icon">✉️</span>
+                            <div class="contact-details">
+                                <span class="label">Email</span>
+                                <span class="val">[YOUR EMAIL]</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">📞</span>
+                            <div class="contact-details">
+                                <span class="label">Phone</span>
+                                <span class="val">[YOUR PHONE]</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icon">📍</span>
+                            <div class="contact-details">
+                                <span class="label">Address</span>
+                                <span class="val">[YOUR ADDRESS]</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="GitHub">GH</a>
+                        <a href="#" aria-label="LinkedIn">LN</a>
+                    </div>
+                </div>
+                <div class="contact-form-container reveal-right">
+                    <form class="contact-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 <span class="yellow-text">[YOUR NAME]</span>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script connection -->
+    <script src="script.js"></script>
+</body>
+</html>
